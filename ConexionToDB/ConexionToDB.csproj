@@ -46,6 +46,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DBManager.cs" />
+    <Compile Include="Conexion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Conexion.Designer.cs">
+      <DependentUpon>Conexion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConexionDB.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +62,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Conexion.resx">
+      <DependentUpon>Conexion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
